@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+
+}
+body{
+    font-size: 13px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding:4% 2%;
+    background-color:hsl(210, 46%, 95%);
+}
+.card{
+    border-radius: 2%;
+    max-width: 19rem;
+    padding: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.card p:last-child{
+    opacity: .7;
+}
+.name p:last-child{
+    opacity: .5;
+}
+img{
+    border-radius: 50%;
+    width:2rem;
+}
+.jeanette img,
+.kira img{
+    border: 2px solid rgb(239, 232, 232);
+}
+.jonathan img{
+    border: 2px solid rgb(169, 162, 162)
+}
+.daniel img{
+    border: 2px solid rgb(238, 130, 238,.6);
+}
+.patrick img{
+    border: 2px solid rgb(238, 130, 238);
+}
+.daniel{
+    background-color:hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 81%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 11.5rem;
+    background-size: 34%;
+}
+.jonathan{
+    background-color:hsl(217, 19%, 35%) ;
+    color: hsl(0, 0%, 81%);
+}
+.jeanette{
+    background-color: white;
+    color:hsl(217, 19%, 35%);
+}
+.patrick{
+    background-color:hsl(219, 29%, 14%) ;
+    color: hsl(0, 0%, 81%);
+}
+.kira {
+    background-color: white;
+    color:hsl(217, 19%, 35%)
+}
+.nameTag{
+    display: flex;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+h2{
+    margin-bottom: 1rem;
+}
+@media screen and (min-width : 800px){
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: unset;
+            gap: 1.5rem;
+        }
+        .kira{
+            max-width: 14.5rem;
+        }
+        .containerTop{
+            display: flex;
+            gap:1.5rem;
+        }
+        .containerBottom{
+            display: flex;
+            gap:1.5rem;
+        }
+        .daniel{
+            background-size: 6rem;
+            background-position-x:80%;
+            max-width: 33rem;
+        }
+        .jonathan{
+            max-width: 15rem;
+        }
+        .jeanette{
+            max-width: 15rem;
+        }
+        .patrick{
+            max-width:33rem ;
+        }
+        .card   {
+            margin-bottom: 1.2rem;
+        }
+
+}
